@@ -6,7 +6,7 @@ import About from "./pages/about";
 import Programs from "./pages/programs";
 import Contact from "./pages/contact";
 import Assessment from "./pages/assessment";
-
+import CareerPath from "./pages/CareerPath";
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +17,8 @@ function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/assessment" element={<Assessment />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/careerPath" element={<CareerPath />} />
+          
         </Routes>
       </Layout>
     </BrowserRouter>
