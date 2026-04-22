@@ -18,6 +18,7 @@ const Navbar = () => {
           <Link to="/assessment">Assessment</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/careerPath">Career Path</Link>
+          <Link to="/opportunities">Opportunities</Link>
         </div>
 
       </div>

@@ -17,15 +17,15 @@ const Home = () => {
 
   {/* Content */}
   <div className="relative z-10 px-6">
-    <h1 className="text-4xl md:text-6xl font-bold mb-6">
+    <h1 className="text-3xl md:text-6xl font-bold mb-6">
       Empowering Nursing Leaders of Tomorrow
     </h1>
 
-    <p className="max-w-2xl mx-auto mb-8 text-lg">
+    <p className="max-w-2xl mx-auto">
       Discover your leadership potential and unlock opportunities across Africa.
     </p>
 
-    <div className="space-x-4">
+    <div className="flex flex-col md:flex-row gap-4 justify-center">
       <Link to="/assessment" className={styles.lightButton}>
         Take Assessment
       </Link>
@@ -60,7 +60,7 @@ const Home = () => {
                 variants={stagger}
                 initial="hidden"
                 whileInView="show"
-                className="grid md:grid-cols-3 gap-6"
+                className="grid grid-cols-1 md:grid-cols-3"
                 >
                 <motion.div variants={fadeIn} className={styles.card}>
                     <h3 className="font-bold mb-2">Leadership Development</h3>
@@ -107,7 +107,7 @@ const Home = () => {
       </section>
 
       {/* 🔥 CTA */}
-      <section className={`${styles.gradientBg} py-20 text-center`}>
+      <section className={`${styles.gradientBg} py-30 text-center`}>
         <div className={styles.container}>
           <h2 className="text-3xl font-bold mb-4">
             Start Your Leadership Journey Today
