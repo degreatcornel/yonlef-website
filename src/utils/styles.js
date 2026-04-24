@@ -14,7 +14,7 @@ export const styles = {
     "bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition",
 
   secondaryButton:
-    "border border-white text-white px-6 py-8 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition",
+    "border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition",
 
   lightButton:
     "bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition",

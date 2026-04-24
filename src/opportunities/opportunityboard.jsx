@@ -25,7 +25,7 @@ const OpportunityBoard = () => {
           Opportunity Board
         </h2>
 
-        {/* ?? Search + Filter */}
+        {/* 🔍 Search + Filter */}
         <div className="flex flex-col md:flex-row gap-4 mb-10">
 
           <input
@@ -49,7 +49,7 @@ const OpportunityBoard = () => {
 
         </div>
 
-        {/* ?? Results */}
+        {/* 📋 Results */}
         <div className="grid md:grid-cols-2 gap-6">
           {filtered.length > 0 ? (
             filtered.map((item) => (

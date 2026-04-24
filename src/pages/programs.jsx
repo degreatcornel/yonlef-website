@@ -12,9 +12,37 @@ const Programs = () => {
           Our Programs
         </h1>
         <p className="max-w-2xl mx-auto text-gray-600">
-          We design impactful programs that equip young nurses with leadership,
-          career direction, and opportunities for long-term success.
+          We design impactful programs that equip student nurses, practicing nurses,
+          and midwives with the skills, leadership capacity, and career direction
+          needed to build meaningful, successful, and globally relevant careers.
+
         </p>
+      </section>
+
+      {/* 🔥 FEATURED PROGRAM */}
+      <section className={`${styles.container} mb-20`}>
+        <div className={`${styles.card} border-l-4 border-blue-600`}>
+          
+          <h2 className="text-2xl font-bold mb-3">
+            Operation Think Again
+          </h2>
+
+        
+          <p className="text-gray-600 mb-4">
+            A flagship quarterly event designed for practicing nurses and midwives seeking
+            to advance their careers and expand their impact. This program challenges
+            conventional career limitations by exposing professionals to evolving
+            opportunities within and beyond the healthcare system.
+          </p>
+
+          <ul className="list-disc pl-5 text-gray-600 space-y-2">
+            <li>Insights into current and emerging trends in the healthcare labor market</li>
+            <li>Sessions led by experienced professionals and industry experts</li>
+            <li>Career advancement and transition strategies</li>
+            <li>Leadership development and mindset transformation</li>
+          </ul>
+
+        </div>
       </section>
 
       {/* 🔥 FEATURED PROGRAM */}
@@ -38,9 +66,12 @@ const Programs = () => {
             <li>Career strategy and transition guidance</li>
             <li>Leadership mindset transformation</li>
           </ul>
+          </div>
+          </section>
 
-        </div>
-      </section>
+
+
+
 
       {/* 🚀 CORE PROGRAMS */}
       <section className={styles.container}>
