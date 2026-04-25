@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { opportunities } from "./data";
-import OpportunityCard from "./OpportunityCard";
+import OpportunityCard from "./opportunitycard";
 import { styles } from "../utils/styles";
 
 const OpportunityBoard = () => {
