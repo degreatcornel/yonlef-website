@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/programs">Programs</Link>
-          <Link to="/careerpath">CareerPath</Link>
+          <Link to="/careerPath">CareerPath</Link>
           <Link to="/opportunities">Opportunities</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/book">Book</Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link to="/" onClick={toggleMenu}>Home</Link>
           <Link to="/about" onClick={toggleMenu}>About</Link>
           <Link to="/programs" onClick={toggleMenu}>Programs</Link>
-          <Link to="/careerpath" onClick={toggleMenu}>CareerPath</Link>
+          <Link to="/careerPath" onClick={toggleMenu}>CareerPath</Link>
           <Link to="/opportunities" onClick={toggleMenu}>Opportunities</Link>
           <Link to="/contact" onClick={toggleMenu}>Contact</Link>
           <Link to="/book" onClick={toggleMenu}>Book</Link>
