@@ -8,7 +8,7 @@ const About = () => {
         
         
         <p>YONLEF serves as a strategic bridge connecting emerging nursing talents with experienced leaders, institutions, and opportunities across Nigeria and Africa. The foundation is driven by a clear purpose: to nurture, empower, and position young nurses as competent leaders who can make meaningful contributions both within and beyond the healthcare sector.
-</p> tor.
+     </p> 
 
 At the core of YONLEF lies a mission to bridge the gap between established nursing leaders and student nurses by building strong leadership capacity among young professionals. This mission recognizes a long-standing disconnect in the profession, where students and early-career nurses often lack access to mentorship, career guidance, and leadership development opportunities. YONLEF seeks to close this gap by creating structured pathways that allow young nurses to engage directly with experienced leaders, learn from their journeys, and develop the skills necessary to thrive in a dynamic and competitive environment. Through this approach, the foundation not only enhances individual growth but also strengthens the entire nursing ecosystem.
 

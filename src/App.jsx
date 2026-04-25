@@ -5,11 +5,11 @@ import About from "./pages/about";
 import Programs from "./pages/programs";
 import Contact from "./pages/contact";
 import Assessment from "./pages/assessment";
-import CareerPath from "./pages/CareerPath";
-import Opportunities from "./pages/Opportunities";
-import Book from "./pages/Book";
-import Unlock from "./pages/Unlock";
-import Mentorship from "./pages/Mentorship";
+import CareerPath from "./pages/careerPath";
+import Opportunities from "./pages/opportunities";
+import Book from "./pages/book";
+import Unlock from "./pages/unlock";
+import Mentorship from "./pages/mentorship";
 import ProtectedRoute from "./routes/ProtectedRoute";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           <Route path="programs" element={<Programs />} />
           <Route path="assessment" element={<Assessment />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="Careerpath" element={<CareerPath />} />
+          <Route path="careerpath" element={<CareerPath />} />
           <Route path="opportunities" element={<Opportunities />} />
           <Route path="book" element={<Book />} />
           <Route path="unlock" element={<Unlock />} />

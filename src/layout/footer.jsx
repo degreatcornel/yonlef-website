@@ -9,12 +9,12 @@ const Footer = () => {
 
         {/* About */}
         <div>
-          <h3 className="text-xl font-bold mb-4"><img 
+          <h3 className="text-xl font-bold mb-4">YONLEF</h3>
+          <img 
               src={logo} 
               alt="YONLEF Logo" 
               className="h-8 mx-auto mb-2"
-            /></h3>
-            <h3>YONLEF</h3>
+            />
           <p className="text-gray-400 text-sm">
             Empowering young nurses across Africa through leadership,
             mentorship, and career development opportunities.
