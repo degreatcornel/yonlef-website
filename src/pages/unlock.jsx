@@ -2,7 +2,7 @@ import { useState } from "react";
 import { styles } from "../utils/styles";
 import { useNavigate } from "react-router-dom";
 
-const Unlock = () => {
+export default function Unlock() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const Unlock = () => {
       const res = await fetch(GOOGLE_SHEET_URL);
       const text = await res.text();
 
-      const emails = text.split("\n")
+      const emails = text.split(/\r?\n/)
       .map(e => e.trim()
       .toLowerCase())
       .filter(e => e && e.includes("@"));
@@ -75,6 +75,4 @@ const Unlock = () => {
       </div>
     </div>
   );
-};
-
-export default Unlock;
+}
