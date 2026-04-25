@@ -16,24 +16,23 @@ export default function Unlock() {
       const res = await fetch(GOOGLE_SHEET_URL);
       const text = await res.text();
 
-      const emails = text.split(/\r?\n/)
-      .map(e => e.trim()
-      .toLowerCase())
-      .filter(e => e && e.includes("@"));
+      const emails = text
+        .split(/\r?\n/)
+        .map((e) => e.trim().toLowerCase())
+        .filter((e) => e && e.includes("@"));
 
-      if (emails.includes(email.toLowerCase())) {
+      const normalized = email.trim().toLowerCase();
+
+      if (emails.includes(normalized)) {
         setStatus("Access granted!");
-        
         localStorage.setItem("yonlef_access", "true");
-                // Redirect after 2 seconds
+        // Redirect after 2 seconds
         setTimeout(() => {
           navigate("/mentorship");
         }, 2000);
-
       } else {
         setStatus("Email not found. Please purchase the book first.");
       }
-
     } catch (err) {
       setStatus("Error verifying access. Try again.");
     }
@@ -42,10 +41,7 @@ export default function Unlock() {
   return (
     <div className="py-20 text-center">
       <div className={styles.container}>
-
-        <h1 className="text-3xl font-bold mb-6">
-          Unlock Your Access
-        </h1>
+        <h1 className="text-3xl font-bold mb-6">Unlock Your Access</h1>
 
         <p className="text-gray-600 mb-8">
           Enter the email you used to purchase the book.
@@ -60,18 +56,12 @@ export default function Unlock() {
         />
 
         <div className="mt-6">
-          <button
-            onClick={handleUnlock}
-            className={styles.primaryButton}
-          >
+          <button onClick={handleUnlock} className={styles.primaryButton}>
             Unlock
           </button>
         </div>
 
-        {status && (
-          <p className="mt-6 text-sm text-gray-700">{status}</p>
-        )}
-
+        {status && <p className="mt-6 text-sm text-gray-700">{status}</p>}
       </div>
     </div>
   );
