@@ -24,7 +24,7 @@ const Home = () => {
     <p className="max-w-2xl mx-auto">
       Discover your leadership potential and unlock opportunities across Africa.
     </p>
-
+    
     <div className="flex flex-col md:flex-row gap-4 justify-center">
       <Link to="/assessment" className={styles.lightButton}>
         Take Assessment
@@ -37,7 +37,6 @@ const Home = () => {
   </div>
 
 </section>
-      
 
       {/* 🧭 MISSION */}
       <section className={styles.section}>

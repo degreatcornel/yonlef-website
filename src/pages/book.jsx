@@ -21,7 +21,7 @@ const Book = () => {
 
   {/* Selar */}
   <a
-  href="https://selar.com/5q4cd1759e"
+  href="https://selar.com/96gr718795"
   target="_blank"
   rel="noopener noreferrer"
   className={styles.primaryButton}
