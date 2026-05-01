@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/yonlef-logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -11,14 +10,6 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-600 text-white px-6 py-1">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-
-              {/* Logo */}
-            <img 
-        src={logo} 
-        alt="YONLEF Logo" 
-        className="h-15 w-auto"
-      />
-
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
           <Link to="/">Home</Link>
@@ -49,7 +40,7 @@ const Navbar = () => {
           <Link to="/opportunities" onClick={toggleMenu}>Opportunities</Link>
           <Link to="/contact" onClick={toggleMenu}>Contact</Link>
           <Link to="/book" onClick={toggleMenu}>Book</Link>
-          <Link to="/mentorship" onClick={toggleMenu}>Mentorship</Link>
+          
         </div>
       )}
     </nav>
