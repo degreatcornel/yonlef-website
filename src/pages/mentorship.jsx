@@ -36,7 +36,16 @@ const Mentorship = () => {
 
       </div>
 
-     
+      <div className="text-center mt-16">
+  <a
+    href="https://chat.whatsapp.com/FtRCBM3MnAv0wlpEuOE22v?mode=gi_t"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-semibold inline-block"
+  >
+    Join Now!
+  </a>
+</div>
 
     </div>
   );
