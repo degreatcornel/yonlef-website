@@ -36,14 +36,7 @@ const Mentorship = () => {
 
       </div>
 
-      <div className="text-center mt-16">
-        <a
-          href="https://chat.whatsapp.com/FtRCBM3MnAv0wlpEuOE22v?mode=gi_t"
-          className={styles.primaryButton}
-        >
-          Join Now
-        </a>
-      </div>
+     
 
     </div>
   );

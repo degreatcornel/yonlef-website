@@ -9,12 +9,12 @@ const Footer = () => {
 
         {/* About */}
         <div>
-          <h3 className="text-xl font-bold mb-4">YONLEF</h3>
-          <img 
+          <h3 className="text-xl font-bold mb-4"><img 
               src={logo} 
               alt="YONLEF Logo" 
               className="h-8 mx-auto mb-2"
-            />
+            /></h3>
+            <h3>YONLEF</h3>
           <p className="text-gray-400 text-sm">
             Empowering young nurses across Africa through leadership,
             mentorship, and career development opportunities.
@@ -56,7 +56,7 @@ const Footer = () => {
       {/* Bottom */}
       <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-6">
         © {new Date().getFullYear()} Young Nursing Leaders Foundation (YONLEF). All rights reserved.
-        <p>Designed and built by DeGreatCornel Global</p>
+        <p>Designed and built by DeGreatCornel Global Ventures</p>
       </div>
     </footer>
   );
