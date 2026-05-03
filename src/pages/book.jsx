@@ -13,34 +13,29 @@ const Book = () => {
         </h1>
 
         <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+          Discover how to create a financially stable and impactful future as a nurse or midwife.
           Discover how to build leadership capacity, unlock opportunities,
-          and create a financially stable and impactful future as a nurse or midwife.
+        
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center">
 
   {/* Selar */}
   <a
-  href="https://selar.com/5q4cd1759e"
+  href="https://selar.com/96gr718795"
   target="_blank"
   rel="noopener noreferrer"
+  onClick={() => {
+    if (window.fbq) {
+      window.fbq('track', 'InitiateCheckout');
+    }
+  }}
   className={styles.primaryButton}
 >
   Buy on Selar
 </a>
 
-
-
-
-  {/* Amazon */}
-  <a
-    href="https://www.amazon.com/YOUR-BOOK-LINK"
-    target="_blank"
-    rel="noopener noreferrer"
-    className={styles.lightButton}
-  >
-    Buy on Amazon
-  </a>
+  {/* Amazon link */}
 
 </div>
       </section>

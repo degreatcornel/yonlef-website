@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { styles } from "../utils/styles";
 import { useNavigate } from "react-router-dom";
 
@@ -25,6 +25,11 @@ export default function Unlock() {
 
       if (emails.includes(normalized)) {
         setStatus("Access granted!");
+
+        if (window.fbq) {
+    window.fbq('track', 'Purchase');
+  }
+  
         localStorage.setItem("yonlef_access", "true");
         // Redirect after 2 seconds
         setTimeout(() => {
