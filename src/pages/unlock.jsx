@@ -23,19 +23,19 @@ export default function Unlock() {
 
       const normalized = email.trim().toLowerCase();
 
-      if (emails.includes(normalized)) {
-        setStatus("Access granted!");
+      if (email) {
+  setStatus("Access granted!");
 
-        if (window.fbq) {
+  if (window.fbq) {
     window.fbq('track', 'Purchase');
   }
-  
-        localStorage.setItem("yonlef_access", "true");
-        // Redirect after 2 seconds
-        setTimeout(() => {
-          navigate("/mentorship");
-        }, 2000);
-      } else {
+
+  localStorage.setItem("hasAccess", "true");
+
+  setTimeout(() => {
+    navigate("/mentorship");
+  }, 1500);
+    } else {
         setStatus("Email not found. Please purchase the book first.");
       }
     } catch (err) {
