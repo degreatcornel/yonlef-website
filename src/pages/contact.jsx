@@ -15,17 +15,6 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Message sent successfully!");
-    setForm({
-      name: "",
-      email: "",
-      message: "",
-    });
-  };
-  
-
   return (
     <div className="py-20">
       <div className={`${styles.container} max-w-2xl`}>
@@ -39,14 +28,12 @@ const Contact = () => {
         </p>
 
         <form
-          name="contact"
+          action="https://formspree.io/f/xgodobdv"
           method="POST"
-          data-netlify="true"
-          onSubmit={handleSubmit}
+          onSubmit={() => alert("✅ Message sent successfully! We will get back to you shortly.")}
           className="space-y-6 bg-white p-8 rounded-xl shadow"
         >
-          <input type="hidden" name="form-name" value="contact" />
-        
+      
           {/* Name */}
           <input
             type="text"
@@ -88,6 +75,20 @@ const Contact = () => {
             Send Message
           </button>
 
+
+            <a
+            href="https://api.whatsapp.com/send?phone=2348108818656&text=Hello%20YONLEF%2C%20I%20would%20like%20to%20make%20an%20enquiry"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => {
+              if (window.fbq) {
+                window.fbq('track', 'Contact');
+              }
+            }}
+            className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >
+              💬 Chat with us on WhatsApp
+            </a>
         </form>
 
       </div>
